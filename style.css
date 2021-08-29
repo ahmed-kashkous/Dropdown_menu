@@ -1,0 +1,176 @@
+:root{
+  --primary-color:#ff7f50;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+ font: normal 1rem/1.4 'Arial', sans-serif;
+ background: #f4f4f4;
+}
+
+#navbar > ul > li {
+  list-style: none;
+  display: inline-block;
+  padding: 1rem;
+  font-size: 1.3rem;
+  
+}
+
+#navbar ul li a{
+  padding: 1.5rem 1rem;
+  text-decoration: none;
+  color: #333 ;
+}
+
+#navbar ul li a:hover{
+  cursor: pointer;
+
+  color: #fff;
+
+
+}
+/* hide nested  ul by default */
+#navbar ul li ul{
+  display: none;
+  list-style: none;
+}
+
+#navbar ul li:hover{
+  cursor: pointer;
+  background: coral;
+  color: #fff;
+  position: relative;
+}
+
+ 
+
+
+
+
+
+
+
+
+
+
+/* nested list to show */
+#navbar ul li:hover ul{
+  background: #ff7f50;
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 250px;
+  margin-top: 1rem;
+}
+#navbar ul li:hover ul li{
+     width: 100%;
+  background: #e7e7e7e7;
+  padding: 1rem 0;
+}
+#navbar ul li:hover ul li a{
+  color:#333;
+}
+#navbar ul li:hover ul li:hover{
+  background: #e0e0e0e0;
+ 
+}
+
+
+#navbar ul li:hover ul li span{
+  float: right;
+  color: #fff;
+  background: coral;
+  text-align: center;
+  padding: .2rem .5rem;
+  font-size: .8rem;
+  border-radius: 5px;
+}
+#navbar ul li:hover ul li:hover span{
+  background: chocolate;
+}
+
+
+
+
+
+@media (max-width:600px){
+  #navbar ul li {
+    display: block;
+  }
+  #navbar ul li:hover ul {
+    width: 100%;
+    position: relative;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.showcase{
+  margin-top: 0
+  ;
+  background: var(--primary-color);
+  color: #fff;
+  height: 275px;
+  display: flex;
+  justify-content: center;text-align: center;
+  align-items: center;
+}
+.showcase h1{
+  font-size: 4rem;
+}
